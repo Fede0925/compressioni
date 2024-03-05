@@ -35,6 +35,16 @@ public class rle extends Application{
 		finestra.show();
 	}
 	private void calcola() {
+		String s = tMatrice.getText();
+		String vett[] = s.split(s);
+		int k = 0;
+		
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				mImg[i][j] = vett[k];
+				k++;
+			}
+		}
 		
 	}
 	public static void main(String[] args) {
